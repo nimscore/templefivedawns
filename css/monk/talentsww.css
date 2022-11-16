@@ -1,0 +1,659 @@
+@charset "utf-8";
+/* CSS Document */
+
+.select {
+	color: #00ff99;
+}
+
+/*ТАБЫ*/
+.btn-rotation-content {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	/*padding-top: 0vw;*/
+	/*margin-top: 1vw;*/
+	margin-bottom: 1vw;
+	/*background-color: rgba(17, 38, 38, 0.7);*/
+}
+
+.btn-rotation-1,
+.btn-rotation-2 {
+	/*background: none;*/
+	font-family: MontserratBold, sans-serif;
+	color: #9d9063;
+	text-transform: uppercase;
+	height: auto;
+	padding: 0.35vw 22.4% 0.2vw 22.4%;
+	background-color: transparent;
+	/*box-shadow: 0 0 0.78vw 0.4vw rgba(0, 0, 0, 0.4);*/
+	border: transparent solid 0.1vw;
+}
+
+/*.btn-rotation-1 {*/
+/*	margin-right: 4%;*/
+/*}*/
+
+/*.btn-rotation-2 {*/
+/*	margin-left: 4%;*/
+/*}*/
+
+.btn-rotation-1:hover,
+.btn-rotation-2:hover {
+	border-bottom: #9d9063 solid 0.1vw;
+}
+
+.tabs-rotation-content {
+	width: 100%;
+}
+
+.tab-rotation-1,
+.tab-rotation-2 {
+	margin-bottom: 1vw;
+	text-align: left;
+}
+
+.tab-rotation-1 {
+	display: block;
+}
+
+.tab-rotation-2 {
+	display: none;
+}
+
+.select-bg-leg {
+	background-color: #032121;
+	box-shadow: 0 0 0.4vw 0.1vw rgba(0, 0, 0, 0.4);
+	border: #9d9063 solid 0.1vw;
+}
+/*ТАБЫ*/
+
+/* ТAЛАНТЫ */
+
+/*КОННЕКТОРЫ*/
+.talent-tree-connection {
+	--color: rgba(255, 209, 0, 0.8);
+	background-image: linear-gradient(
+			0deg,
+			#000 0%,
+			transparent 25%,
+			transparent 75%,
+			#000 100%
+		),
+		linear-gradient(90deg, #000 0%, var(--color) 50%, #000 100%);
+	filter: grayscale(100%);
+	position: absolute;
+	transform-origin: left center;
+	pointer-events: none;
+}
+/*КОННЕКТОРЫ*/
+
+.talents-tabs {
+	display: flex;
+	flex-flow: column nowrap;
+	box-shadow: 0 0 0.78vw 0.4vw rgba(0, 0, 0, 0.6);
+	border: #9d9063 solid 0.1vw;
+}
+
+.ww-bg-tabs {
+	background: url("../../img/monk_windwalker-bg.jpg") no-repeat right top;
+	background-size: cover;
+}
+
+.mw-bg-tabs {
+	background: url("../../img/monk_mistweaver-bg.jpg") no-repeat right top;
+	background-size: cover;
+}
+
+.bm-bg-tabs {
+	background: url("../../img/monk_brewmaster-bg.jpg") no-repeat right top;
+	background-size: cover;
+}
+
+.ww-bg-monk,
+.ww-bg-spec,
+.mw-bg-monk,
+.mw-bg-spec,
+.bm-bg-monk,
+.bm-bg-spec {
+	background: none;
+}
+
+.talents-tabs-in {
+	/*background-color: rgba(17, 26, 26, 0.2);*/
+	display: flex;
+	flex-flow: row nowrap;
+	padding: 1.5vw;
+	gap: 10vw;
+	justify-content: center;
+}
+
+#double-tal {
+	z-index: 2;
+	text-align: center;
+	color: #fff919;
+	padding-top: 0.6vw;
+	font-size: 0.7vw;
+	pointer-events: none;
+	filter: drop-shadow(0 0 10px rgba(100, 100, 100, 1));
+}
+
+#icon-left {
+	margin-left: -10%;
+	margin-right: 24%;
+}
+
+#icon-right {
+	margin-right: -10%;
+	margin-left: 24%;
+}
+
+#talents-swap-spec,
+#talents-swap-monk {
+	text-align: center;
+	color: #00ff99;
+	font-size: 2vw;
+	z-index: 3;
+	filter: drop-shadow(0 0 20px rgba(100, 100, 100, 1));
+}
+
+#talents-swap-spec:hover,
+#talents-swap-monk:hover {
+	cursor: pointer;
+}
+
+#tn1,
+#tn2,
+#tn3,
+#tn4 {
+	color: #9d9063;
+	font-family: MontserratBlack, sans-serif;
+	font-size: 0.8vw;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#tc1,
+#tc2,
+#tc3,
+#tc4 {
+	color: #9d9063;
+	font-family: Montserrat, sans-serif;
+	font-size: 0.7vw;
+	font-weight: 500;
+	text-align: center;
+}
+
+.row1-tc,
+.row2-tc,
+.row3-tc,
+.row4-tc {
+	/*background-color: rgba(17, 26, 26, 0.4);*/
+	padding: 1.5% 1.5% 3% 1.5%;
+	display: none;
+	margin: 0.2vw 0.1vw 0.2vw 0.1vw;
+}
+
+.talents-header h2 {
+	font-family: MontserratBlack, sans-serif;
+	padding: 0;
+	margin: -0.6vw 0 1vw 0;
+	background-color: rgba(3, 19, 19, 0.6);
+	border-radius: 4px 16px 4px 16px;
+}
+
+/*СПЕК МОНАХА*/
+.talents-spec,
+.talents-monk {
+	flex: 1;
+	position: relative;
+	max-width: 30%;
+	width: 100%;
+}
+
+.talents-spec-in,
+.talents-monk-in {
+	position: relative;
+	user-select: none;
+}
+
+.talents-spec-grid1-4,
+.talents-monk-grid1-4 {
+	display: grid;
+	grid-template-columns: repeat(17, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.talents-spec-grid5-7,
+.talents-spec-grid8-10,
+.talents-monk-grid5-7,
+.talents-monk-grid8-10 {
+	display: grid;
+	grid-template-columns: repeat(17, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.talents-spec-grid1-5,
+.talents-spec-grid6-10,
+.talents-monk-grid1-5,
+.talents-monk-grid6-10 {
+	display: grid;
+	grid-template-columns: repeat(17, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#tt10,
+#tt21,
+#tt26,
+#tt24,
+#tt29,
+#tt32,
+#tt34,
+#tt36,
+#tt48,
+#tt51,
+#ttm21,
+#ttm26,
+#ttm28,
+#rtt10,
+#rtt21,
+#rtt26,
+#rtt24,
+#rtt29,
+#rtt32,
+#rtt34,
+#rtt36,
+#rtt48,
+#rtt51,
+#rttm21,
+#rttm26,
+#rttm28,
+#mtt10,
+#mtt21,
+#mtt26,
+#mtt24,
+#mtt29,
+#mtt32,
+#mtt34,
+#mtt36,
+#mtt48,
+#mtt51,
+#mttm21,
+#mttm26,
+#mttm28 {
+	z-index: 1;
+	display: block;
+}
+/*СПЕК МОНАХА*/
+
+.iconmedium {
+	background-color: #9d9063;
+	margin: 0.15vw 0.2vw 0.15vw 0.2vw;
+	box-shadow: 0 0 0.4vw 0.1vw rgba(0, 0, 0, 0.6);
+	filter: grayscale(100%);
+}
+
+.active-tal {
+}
+
+#placeholder {
+	visibility: hidden;
+}
+
+.green-tal {
+	background-color: #00ff99;
+	filter: none;
+}
+
+.yellow-tal {
+	background-color: #fff468;
+	filter: none;
+}
+
+.red-tal {
+	background-color: #f23f4d;
+	filter: none;
+}
+
+.pick-tal {
+	background-color: rgba(255, 209, 0, 0.8);
+	filter: none;
+}
+
+.inner {
+	border: #9d9063 solid 0.1vw;
+	/*transform: rotate(45deg);*/
+}
+
+.inner-background1 {
+	background-position: left center;
+	transform-origin: right center;
+	width: 50%;
+	z-index: 10;
+}
+/* ТAЛАНТЫ */
+
+/* 1920PX И МЕНЬШЕ */
+@media only screen and (max-width: 1920px) {
+	.btn-rotation-1,
+	.btn-rotation-2 {
+		padding: 0.6vw 21.6% 0.35vw 21.6%;
+	}
+
+	.talents-tabs-in {
+		gap: 1vw;
+	}
+
+	.talents-spec,
+	.talents-monk {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	#talents-swap-spec,
+	#talents-swap-monk {
+		font-size: 2.6vw;
+	}
+
+	.row1-tc,
+	.row2-tc,
+	.row3-tc,
+	.row4-tc {
+		margin: 0.4vw;
+	}
+}
+
+/* 1440PX И МЕНЬШЕ */
+@media only screen and (max-width: 1440px) {
+	.btn-rotation-1,
+	.btn-rotation-2 {
+		padding: 0.6vw 21.5% 0.35vw 21.5%;
+	}
+
+	#tn1,
+	#tn2,
+	#tn3,
+	#tn4 {
+		font-size: 1.6vw;
+	}
+
+	#tc1,
+	#tc2,
+	#tc3,
+	#tc4 {
+		font-size: 1.1vw;
+	}
+
+	.row1-tc,
+	.row2-tc,
+	.row3-tc,
+	.row4-tc {
+		margin: 0.5vw;
+	}
+
+	#double-tal {
+		padding-top: 1.1vw;
+		font-size: 1.8vw;
+	}
+
+	#icon-left {
+		margin-left: -10%;
+		margin-right: 19%;
+	}
+
+	#icon-right {
+		margin-right: -10%;
+		margin-left: 19%;
+	}
+
+	#talents-swap-spec,
+	#talents-swap-monk {
+		/*padding-top: 0.85vw;*/
+		font-size: 4vw;
+	}
+
+	.talents-tabs-in {
+		gap: 1vw;
+	}
+
+	.talents-spec,
+	.talents-monk {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.iconmedium {
+		margin: 0.4vw;
+		box-shadow: 0 0 0.4vw 0.2vw rgba(0, 0, 0, 0.6);
+	}
+
+	.active-tal {
+	}
+}
+
+/* 1200PX И МЕНЬШЕ */
+@media only screen and (max-width: 1200px) {
+	.talents-tabs-in {
+		flex-flow: row wrap;
+		gap: 1vw;
+	}
+
+	.talents-spec,
+	.talents-monk {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	#talents-swap-spec,
+	#talents-swap-monk {
+		font-size: 4vw;
+	}
+}
+
+/* 480PX И МЕНЬШЕ */
+@media only screen and (max-width: 480px) {
+	.btn-rotation-content {
+		margin-bottom: 5vw;
+	}
+
+	/*#tt1[data-disable-wowhead-tooltip] {*/
+	/*	content: attr(data-disable-wowhead-tooltip, true);*/
+	/*}*/
+
+	.btn-rotation-1,
+	.btn-rotation-2 {
+		padding: 1.4vw 16.2% 1vw 16.2%;
+	}
+
+	.talents-tabs {
+		background: none;
+		border: none;
+		box-shadow: none;
+	}
+
+	.talents-tabs-in {
+		flex-flow: row wrap;
+		gap: 10vw;
+	}
+
+	.talents-header h2 {
+		background-color: rgba(3, 19, 19, 0.9);
+		margin: 0.4vw 3% 1vw 3%;
+		border-radius: 2px 10px 2px 10px;
+	}
+
+	.talents-monk {
+		border: #9d9063 solid 0.1vw;
+		/*border: 0.1vw solid transparent;*/
+		/*border-image: linear-gradient(*/
+		/*	to left top,*/
+		/*	#9d9063 80%,*/
+		/*	transparent 90%,*/
+		/*	#9d9063 80%,*/
+		/*	transparent 90%*/
+		/*);*/
+		/*border-image-slice: 1;*/
+		padding-top: 2vw;
+		padding-bottom: 2vw;
+		box-shadow: 0 0 0.6vw 0.6vw rgba(0, 0, 0, 0.6);
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.talents-spec {
+		padding-top: 2vw;
+		padding-bottom: 2vw;
+		border: #9d9063 solid 0.1vw;
+		/*border: 0.1vw solid transparent;*/
+		/*border-image: linear-gradient(*/
+		/*	to left top,*/
+		/*	#9d9063 80%,*/
+		/*	transparent 90%,*/
+		/*	#9d9063 80%,*/
+		/*	transparent 90%*/
+		/*);*/
+		/*border-image-slice: 1;*/
+		box-shadow: 0 0 0.6vw 0.6vw rgba(0, 0, 0, 0.6);
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.ww-bg-tabs,
+	.mw-bg-tabs,
+	.bm-bg-tabs {
+		background: none;
+	}
+
+	.ww-bg-monk {
+		background: url("../../img/monk_windwalker-bg.jpg") no-repeat center top;
+		background-size: cover;
+	}
+
+	.ww-bg-spec {
+		background: url("../../img/monk_windwalker-bg.jpg") no-repeat right top;
+		background-size: cover;
+	}
+
+	.mw-bg-monk {
+		background: url("../../img/monk_mistweaver-bg.jpg") no-repeat center top;
+		background-size: cover;
+	}
+
+	.mw-bg-spec {
+		background: url("../../img/monk_mistweaver-bg.jpg") no-repeat right top;
+		background-size: cover;
+	}
+
+	.bm-bg-monk {
+		background: url("../../img/monk_brewmaster-bg.jpg") no-repeat center top;
+		background-size: cover;
+	}
+
+	.bm-bg-spec {
+		background: url("../../img/monk_brewmaster-bg.jpg") no-repeat right top;
+		background-size: cover;
+	}
+
+	#double-tal {
+		padding-top: 3.5vw;
+		font-size: 6vw;
+	}
+
+	#icon-left {
+		margin-left: -10%;
+		margin-right: 19%;
+	}
+
+	#icon-right {
+		margin-right: -10%;
+		margin-left: 19%;
+	}
+
+	#talents-swap-spec,
+	#talents-swap-monk {
+		font-size: 13vw;
+	}
+
+	.row1-tc,
+	.row2-tc,
+	.row3-tc,
+	.row4-tc {
+		margin: 2vw;
+	}
+
+	.iconmedium {
+		inset: 10%;
+		margin: 1.4vw 0.6vw 1.4vw 0.6vw;
+		box-shadow: 0 0 0.6vw 0.6vw rgba(0, 0, 0, 0.6);
+	}
+
+	.active-tal {
+	}
+
+	.green-tal {
+		background-color: #00ff99;
+	}
+
+	.yellow-tal {
+		background-color: #fff468;
+	}
+
+	.red-tal {
+		background-color: #f23f4d;
+	}
+
+	#tn1,
+	#tn2,
+	#tn3,
+	#tn4 {
+		font-size: 5vw;
+	}
+
+	#tc1,
+	#tc2,
+	#tc3,
+	#tc4 {
+		font-size: 4vw;
+	}
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url(../../fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+	font-family: MontserratSemiBold;
+	src: url(../../fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: MontserratBold;
+	src: url(../../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+	font-family: MontserratMedium;
+	src: url(../../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+	font-family: MontserratItalic;
+	src: url(../../fonts/Montserrat-Italic.ttf);
+}
+
+@font-face {
+	font-family: MontserratBlack;
+	src: url(../../fonts/Montserrat-Black.ttf);
+}

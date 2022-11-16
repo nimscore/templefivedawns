@@ -2,7 +2,8 @@
 /* CSS Document */
 
 body {
-	background: #0A1313 url(../img/coolpicturetrokes5.png) no-repeat top 3vw center;
+	background: #0a1313 url(../img/coolpicturetrokes5.png) no-repeat top 3vw
+		center;
 	background-size: contain;
 	margin: 0;
 	padding: 0;
@@ -12,7 +13,9 @@ body {
 	/*background-color: #0A1313;*/
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	color: #9d9063;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -398,7 +401,7 @@ wb {
 
 .footer-copyr p {
 	text-align: center;
-	font-weight: 100;
+	font-weight: 400;
 	font-family: Montserrat, sans-serif;
 	font-size: 0.8vw;
 }
@@ -526,7 +529,8 @@ wb {
 /* 480PX И МЕНЬШЕ */
 @media only screen and (max-width: 480px) {
 	body {
-		background: #0A1313 url(../img/coolpicturetrokes5.png) no-repeat top 11vw center;
+		background: #0a1313 url(../img/coolpicturetrokes5.png) no-repeat top 11vw
+			center;
 		background-size: 130%;
 	}
 
@@ -878,7 +882,6 @@ wb {
 	}
 
 	/* КОНЕЦ МОБИЛЬНОГО ФУТЕРА */
-
 }
 
 @font-face {
