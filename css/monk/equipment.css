@@ -10,12 +10,12 @@
 
 .leg-format-note {
 	font-size: 0.6vw;
-	font-weight: 100;
+	font-weight: 400;
 }
 
 .leg-format-note a {
 	font-size: 0.6vw;
-	font-weight: 100;
+	font-weight: 400;
 }
 
 .acnhor-nav-bar {
@@ -429,7 +429,6 @@
 /*maincontainer*/
 /* 1920PX И МЕНЬШЕ */
 @media only screen and (max-width: 1920px) {
-
 	.btn-leg-1,
 	.btn-leg-2,
 	.btn-leg-3,
@@ -448,15 +447,13 @@
 	.btn-race-3,
 	.btn-race2-1,
 	.btn-race2-2,
-	.btn-race2-3{
+	.btn-race2-3 {
 		padding: 0.6vw 10.9% 0.35vw 10.9%;
 	}
-
 }
 
 /* 1440PX И МЕНЬШЕ */
 @media only screen and (max-width: 1440px) {
-
 	.sticky-nav-bar {
 		top: 3.1vw;
 		width: 100%;
@@ -490,8 +487,8 @@
 	.btn-race-3,
 	.btn-race2-1,
 	.btn-race2-2,
-	.btn-race2-3{
-		padding: 0.6vw 10.45% 0.35vw 10.45%;
+	.btn-race2-3 {
+		padding: 0.6vw 10.4% 0.35vw 10.4%;
 	}
 
 	.collum-alliance {
@@ -515,12 +512,10 @@
 	.collum-horde-in {
 		min-height: 22vw;
 	}
-
 }
 
 /* 480PX И МЕНЬШЕ */
 @media only screen and (max-width: 480px) {
-
 	.leg-format-note {
 		font-size: 3vw;
 	}
@@ -530,7 +525,7 @@
 	}
 
 	.sticky-nav-bar {
-	display: none;
+		display: none;
 	}
 
 	.btn-stat-1 p,
@@ -599,11 +594,9 @@
 	.btn-race-3,
 	.btn-race2-1,
 	.btn-race2-2,
-	.btn-race2-3{
+	.btn-race2-3 {
 		padding: 1.4vw 8.9% 1vw 8.9%;
 	}
-
-
 }
 
 @font-face {
