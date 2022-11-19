@@ -1,9 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-
 /* ХВАТИТ СТАВИТЬ ПИКСЕЛИ В БОРДЕРАХ И ШАДОУ!!!!!!!!!!!!!!!!!! */
-
 
 body {
 	margin: 0;
@@ -13,7 +11,7 @@ body {
 	/* background: url(../img/raids/vault-of-the-incarnates/vault-bg-header.png) top
 		no-repeat;
 	background-size: 94%; */
-	background-color: #0A1313;
+	background-color: #0a1313;
 }
 
 h1 {
@@ -207,34 +205,6 @@ code {
 }
 
 #header-bg {
-	/* background: url("../img/headermain.png") center no-repeat;
-
-	background-size: 100%;
-	width: 120%;
-	right: 6.5vw;
-	height: auto;
-	position: relative;
-	top: 0;
-	border-bottom: solid 1px #9d9063;
-	margin-top: 0;
-	overflow: auto;
-	padding-bottom: 7.2vw;
-	padding-top: 0.5vw; */
-
-	/* background: url("../img/headermain.png");
-	background-size: 120%;
-	background-position-x: -8vw;
-	width: 104%;
-	right: 3.7vw;
-	height: auto;
-	position: relative;
-	top: 0;
-	border-bottom: solid 0.1vw #9d9063;
-	margin-top: 0;
-	overflow: auto;
-	padding-bottom: 7vw;
-	margin-bottom: 0.6%; */
-
 	background: url("../img/headermain.png");
 	background-size: 100%;
 	width: 104%;
@@ -247,7 +217,6 @@ code {
 	overflow: auto;
 	padding-bottom: 5.3%;
 	margin-bottom: 0.6%;
-
 }
 
 #templefd {
@@ -385,7 +354,7 @@ code {
 	/* margin-top: 28.1%; */
 	/* margin-left: 6%; */
 	box-shadow: 0 0 0.78vw 0.1vw rgba(0, 0, 0, 0.6),
-	0 0 0.78vw 0.1vw rgba(0, 0, 0, 0.6);
+		0 0 0.78vw 0.1vw rgba(0, 0, 0, 0.6);
 	padding-right: 0.5%;
 	color: #9d9063;
 	font-family: MontserratMedium, sans-serif;
@@ -630,7 +599,6 @@ code {
 	font-size: 0.75vw;
 }
 
-
 .Loading {
 	width: 40%;
 	margin-left: 30%;
@@ -661,7 +629,6 @@ code {
 	font-size: 1.2vw;
 	margin-top: 3.5%;
 }
-
 
 /* НАЧАЛО МЕЙН ФУТЕРА */
 
@@ -763,15 +730,15 @@ code {
 		margin-right: 5%;
 	}
 
-	/* #header-bg {
+	#header-bg {
 		width: 120%;
-		right: 16.8vw;
-		padding-bottom: 7.1vw;
-		padding-top: 0.5vw;
+		background-position-x: -2vw;
+		/*padding-bottom: 7.1vw;*/
+		/*padding-top: 0.5vw;*/
 	}
 
-	#templefd {
-		margin-left: 0%;
+	/* #templefd {
+		margin-left: 0;
 	}
 
 	.header-right-bg {
@@ -780,6 +747,7 @@ code {
 		margin-right: 41%;
 		margin-left: 49%;
 	} */
+
 	.container {
 		margin: 3vw 5% 3vw 5%;
 	}
@@ -864,7 +832,7 @@ code {
 		padding: 0;
 		width: 100%;
 		overflow: auto;
-		background-color: #0A1313;
+		background-color: #0a1313;
 	}
 
 	h1 {
@@ -1010,11 +978,10 @@ code {
 		z-index: 80;
 	}
 
-
 	.popup-menu {
 		padding: 5vw 0 0 0;
 		border-right: #9d9063 solid 0.1vw;
-		background-color: #0A1313;
+		background-color: #0a1313;
 		width: 100%;
 		height: 100%;
 		margin: 0;
@@ -1051,7 +1018,6 @@ code {
 		width: 100%;
 	}
 
-
 	/* .Abilities {
 		margin-top: 6.5%;
 	} */
@@ -1061,7 +1027,6 @@ code {
 		margin-left: 2%;
 		/* border: #00ff98 solid 1px; */
 	}
-
 
 	.menuCard {
 		/* background-color:#112626; */
@@ -1087,7 +1052,6 @@ code {
 
 		/* background: rgb(7,21,21);
 	background: linear-gradient(90deg, rgba(7,21,21,1) 20%, rgba(17,38,38,1) 100%); */
-
 	}
 
 	/* .Gradient2 {
@@ -1103,7 +1067,6 @@ code {
 		margin-left: 0;
 		z-index: 100;
 		line-height: 1.5;
-
 	}
 
 	.popup-select-item-menu p:hover {
@@ -1119,11 +1082,9 @@ code {
 		font-size: 3.6vw;
 	}
 
-
 	.popup-select-item-submenu:hover {
 		color: #00ff99;
 	}
-
 
 	/* КОНЕЦ ПОПАП-МЕНЮ */
 	.container {
@@ -1143,7 +1104,6 @@ code {
 		box-sizing: border-box;
 		width: 100%;
 	}
-
 
 	.frame-red-accord-mw,
 	.frame-red-accord-ww,
@@ -1173,7 +1133,6 @@ code {
 		height: auto;
 		width: 100%;
 	}
-
 
 	#twitchStreamMob1,
 	#twitchStreamMob2,
@@ -1241,21 +1200,26 @@ code {
 		border-image-slice: 1;
 	}
 
-
-	.LoadingMobBM, .LoadingMobMW, .LoadingMobWW {
+	.LoadingMobBM,
+	.LoadingMobMW,
+	.LoadingMobWW {
 		width: 20%;
 		margin: 0.5% 40% 1.2%;
 		display: block;
 	}
 
-	.noStreamMobBM, .noStreamMobMW, .noStreamMobWW {
+	.noStreamMobBM,
+	.noStreamMobMW,
+	.noStreamMobWW {
 		font-family: MontserratSemiBold, sans-serif;
 		display: none;
 		line-height: 1;
 		margin: 1.5% 1% 0 -2.5%;
 	}
 
-	.noStreamMobBM p, .noStreamMobMW p, .noStreamMobWW p {
+	.noStreamMobBM p,
+	.noStreamMobMW p,
+	.noStreamMobWW p {
 		font-size: 3.5vw;
 		text-align: center;
 		font-family: MontserratSemiBold, sans-serif;
@@ -1268,7 +1232,6 @@ code {
 		margin-top: 2.5%;
 		margin-bottom: 0.8%;
 	}
-
 
 	.fixed {
 		position: fixed;
@@ -1316,7 +1279,6 @@ code {
 		box-sizing: border-box; */
 	}
 
-
 	/* аккордеон конец */
 	.aboutProject {
 		width: 40%;
@@ -1329,7 +1291,7 @@ code {
 
 	.aboutProject p {
 		font-size: 4vw;
-		font-family: MontserratSemiBold, sans-serif;;
+		font-family: MontserratSemiBold, sans-serif;
 	}
 
 	.aboutPic {
