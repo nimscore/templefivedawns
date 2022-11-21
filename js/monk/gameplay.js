@@ -54,18 +54,20 @@ $(document).ready(function() {
 	$(".rb4").click(function(){ //статуя тигра
 		if ($(".asrp6").css('display') == 'none') {
 			$(".asrp6").fadeIn(600); //аст
+			$(".rp8").fadeIn(600); //опенер
 
 			$(".rb4").removeClass("fa-xmark");
 			$(".rb4").addClass("fa-check");
 		} else {
 			$(".asrp6").fadeOut(200);
+			$(".rp8").fadeOut(200);
 
 			$(".rb4").removeClass("fa-check");
 			$(".rb4").addClass("fa-xmark");
 		}
 	});
 
-	$(".rb5").click(function(){ //статуя тигра
+	$(".rb5").click(function(){ //отвар черного быка
 		if ($(".asrp3").css('display') == 'none') {
 			$(".asrp3").fadeIn(600); //аст
 
