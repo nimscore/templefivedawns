@@ -304,11 +304,11 @@
 	filter: grayscale(100%);
 }
 
-.active-tal {
-}
-
 #placeholder {
 	visibility: hidden;
+}
+
+.active-tal {
 }
 
 .green-tal {
@@ -323,6 +323,11 @@
 
 .red-tal {
 	background-color: #f23f4d;
+	filter: none;
+}
+
+.prpl-tal {
+	background-color: #a330c9;
 	filter: none;
 }
 
@@ -610,6 +615,10 @@
 
 	.red-tal {
 		background-color: #f23f4d;
+	}
+
+	.prpl-tal {
+		background-color: #a330c9;
 	}
 
 	#tn1,

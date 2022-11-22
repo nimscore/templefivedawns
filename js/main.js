@@ -11,7 +11,7 @@ $(document).ready(function () {
 		}
 	});
 // моб аккордеон конец брю
-
+ 
 // моб аккордеон начало ткача
 	$(".SlideMobMW").click(function () {
 		if ($(".panelMW").css('display') == 'none') {
@@ -141,17 +141,17 @@ $(document).ready(function () {
 		$(".dropdownMenuContainer1").css("marginLeft", marginLeft1);
 	});
 
-	$(".second").hover(function () {
-		var widthContainer2 = $(".dropdownMenu2").outerWidth()
-		var heightContainer2 = $(".dropdownMenu2").outerHeight()
-		var marginLeft2 = $(".dropdownMenu2").css("marginLeft");
-		var widthWindow = $(window).width();
-		$(".dropdownMenu2").fadeIn(100);
-		$(".dropdownMenuContainer2").css("display", "block");
-		$(".dropdownMenuContainer2").css("width", (100 * widthContainer2 / widthWindow) + "vw");
-		$(".dropdownMenuContainer2").css("height", (100 * heightContainer2 / widthWindow) + 0.45 + "vw");
-		$(".dropdownMenuContainer2").css("marginLeft", marginLeft2);
-	});
+	// $(".second").hover(function () {
+	// 	var widthContainer2 = $(".dropdownMenu2").outerWidth()
+	// 	var heightContainer2 = $(".dropdownMenu2").outerHeight()
+	// 	var marginLeft2 = $(".dropdownMenu2").css("marginLeft");
+	// 	var widthWindow = $(window).width();
+	// 	$(".dropdownMenu2").fadeIn(100);
+	// 	$(".dropdownMenuContainer2").css("display", "block");
+	// 	$(".dropdownMenuContainer2").css("width", (100 * widthContainer2 / widthWindow) + "vw");
+	// 	$(".dropdownMenuContainer2").css("height", (100 * heightContainer2 / widthWindow) + 0.45 + "vw");
+	// 	$(".dropdownMenuContainer2").css("marginLeft", marginLeft2);
+	// });
 
 	$(".third").hover(function () {
 		var widthContainer3 = $(".dropdownMenu3").outerWidth()
@@ -291,22 +291,22 @@ $(document).ready(function () {
 
 	});
 
-	// $(".seventh").mouseleave(function () {
-	//
-	// 	if (
-	//
-	// 		$('.dropdownMenuContainer7:hover').length != 0
-	//
-	// 	) {
-	// 		$(".dropdownMenu7").css("display", "block");
-	//
-	// 	} else {
-	// 		$(".dropdownMenu7").fadeOut(100);
-	// 		$(".dropdownMenuContainer7").css("display", "none");
-	//
-	// 	}
-	//
-	// });
+	$(".seventh").mouseleave(function () {
+	
+		if (
+	
+			$('.dropdownMenuContainer7:hover').length != 0
+	
+		) {
+			$(".dropdownMenu7").css("display", "block");
+	
+		} else {
+			$(".dropdownMenu7").fadeOut(100);
+			$(".dropdownMenuContainer7").css("display", "none");
+	
+		}
+	
+	});
 
 
 	$(".dropdownMenuContainer1").mouseleave(function () {
@@ -381,17 +381,17 @@ $(document).ready(function () {
 		}
 	});
 
-	// $(".dropdownMenuContainer7").mouseleave(function () {
-	// 	if (
-	// 		$('.seventh:hover').length != 0
-	//
-	// 	) {
-	// 		$(".dropdownMenu7").css("display", "block");
-	// 	} else {
-	// 		$(".dropdownMenu7").fadeOut(100);
-	// 		$(".dropdownMenuContainer7").css("display", "none");
-	// 	}
-	// });
+	$(".dropdownMenuContainer7").mouseleave(function () {
+		if (
+			$('.seventh:hover').length != 0
+	
+		) {
+			$(".dropdownMenu7").css("display", "block");
+		} else {
+			$(".dropdownMenu7").fadeOut(100);
+			$(".dropdownMenuContainer7").css("display", "none");
+		}
+	});
 
 
 //  Меню второго слайда
@@ -413,18 +413,18 @@ $(document).ready(function () {
 
 	});
 
-	$(".secondII").hover(function () {
-		var widthContainerII2 = $(".dropdownMenuII2").outerWidth()
-		var heightContainerII2 = $(".dropdownMenuII2").outerHeight()
-		var marginLeftII2 = $(".dropdownMenuII2").css("marginLeft");
-		var widthWindow = $(window).width();
-		$(".dropdownMenuII2").fadeIn(100);
-		$(".dropdownMenuContainerII2").css("display", "block");
-		$(".dropdownMenuContainerII2").css("width", (100 * widthContainerII2 / widthWindow) + "vw");
-		$(".dropdownMenuContainerII2").css("height", (100 * heightContainerII2 / widthWindow) + 0.45 + "vw");
-		$(".dropdownMenuContainerII2").css("marginLeft", marginLeftII2);
+	// $(".secondII").hover(function () {
+	// 	var widthContainerII2 = $(".dropdownMenuII2").outerWidth()
+	// 	var heightContainerII2 = $(".dropdownMenuII2").outerHeight()
+	// 	var marginLeftII2 = $(".dropdownMenuII2").css("marginLeft");
+	// 	var widthWindow = $(window).width();
+	// 	$(".dropdownMenuII2").fadeIn(100);
+	// 	$(".dropdownMenuContainerII2").css("display", "block");
+	// 	$(".dropdownMenuContainerII2").css("width", (100 * widthContainerII2 / widthWindow) + "vw");
+	// 	$(".dropdownMenuContainerII2").css("height", (100 * heightContainerII2 / widthWindow) + 0.45 + "vw");
+	// 	$(".dropdownMenuContainerII2").css("marginLeft", marginLeftII2);
 
-	});
+	// });
 
 	$(".thirdII").hover(function () {
 		var widthContainerII3 = $(".dropdownMenuII3").outerWidth()
@@ -593,22 +593,22 @@ $(document).ready(function () {
 
 	});
 
-	// $(".seventhII").mouseleave(function () {
-	//
-	// 	if (
-	//
-	// 		$('.dropdownMenuContainerII7:hover').length != 0
-	//
-	// 	) {
-	// 		$(".dropdownMenuII7").css("display", "block");
-	//
-	// 	} else {
-	// 		$(".dropdownMenuII7").fadeOut(100);
-	// 		$(".dropdownMenuContainerII7").css("display", "none");
-	//
-	// 	}
-	//
-	// });
+	$(".seventhII").mouseleave(function () {
+	
+		if (
+	
+			$('.dropdownMenuContainerII7:hover').length != 0
+	
+		) {
+			$(".dropdownMenuII7").css("display", "block");
+	
+		} else {
+			$(".dropdownMenuII7").fadeOut(100);
+			$(".dropdownMenuContainerII7").css("display", "none");
+	
+		}
+	
+	});
 
 
 	$(".dropdownMenuContainerII1").mouseleave(function () {
@@ -683,17 +683,17 @@ $(document).ready(function () {
 		}
 	});
 
-	// $(".dropdownMenuContainerII7").mouseleave(function () {
-	// 	if (
-	// 		$('.seventhII:hover').length != 0
-	//
-	// 	) {
-	// 		$(".dropdownMenuII7").css("display", "block");
-	// 	} else {
-	// 		$(".dropdownMenuII7").fadeOut(100);
-	// 		$(".dropdownMenuContainerII7").css("display", "none");
-	// 	}
-	// });
+	$(".dropdownMenuContainerII7").mouseleave(function () {
+		if (
+			$('.seventhII:hover').length != 0
+	
+		) {
+			$(".dropdownMenuII7").css("display", "block");
+		} else {
+			$(".dropdownMenuII7").fadeOut(100);
+			$(".dropdownMenuContainerII7").css("display", "none");
+		}
+	});
 
 
 // МЕНЮ ТРЕТЬЕГО СЛАЙДА 
@@ -714,18 +714,18 @@ $(document).ready(function () {
 
 	});
 
-	$(".secondIII").hover(function () {
-		var widthContainerIII2 = $(".dropdownMenuIII2").outerWidth()
-		var heightContainerIII2 = $(".dropdownMenuIII2").outerHeight()
-		var marginLeftIII2 = $(".dropdownMenuIII2").css("marginLeft");
-		var widthWindow = $(window).width();
-		$(".dropdownMenuIII2").fadeIn(100);
-		$(".dropdownMenuContainerIII2").css("display", "block");
-		$(".dropdownMenuContainerIII2").css("width", (100 * widthContainerIII2 / widthWindow) + "vw");
-		$(".dropdownMenuContainerIII2").css("height", (100 * heightContainerIII2 / widthWindow) + 0.45 + "vw");
-		$(".dropdownMenuContainerIII2").css("marginLeft", marginLeftIII2);
+	// $(".secondIII").hover(function () {
+	// 	var widthContainerIII2 = $(".dropdownMenuIII2").outerWidth()
+	// 	var heightContainerIII2 = $(".dropdownMenuIII2").outerHeight()
+	// 	var marginLeftIII2 = $(".dropdownMenuIII2").css("marginLeft");
+	// 	var widthWindow = $(window).width();
+	// 	$(".dropdownMenuIII2").fadeIn(100);
+	// 	$(".dropdownMenuContainerIII2").css("display", "block");
+	// 	$(".dropdownMenuContainerIII2").css("width", (100 * widthContainerIII2 / widthWindow) + "vw");
+	// 	$(".dropdownMenuContainerIII2").css("height", (100 * heightContainerIII2 / widthWindow) + 0.45 + "vw");
+	// 	$(".dropdownMenuContainerIII2").css("marginLeft", marginLeftIII2);
 
-	});
+	// });
 
 	$(".thirdIII").hover(function () {
 		var widthContainerIII3 = $(".dropdownMenuIII3").outerWidth()
@@ -894,22 +894,22 @@ $(document).ready(function () {
 
 	});
 
-	// $(".seventhIII").mouseleave(function () {
-	//
-	// 	if (
-	//
-	// 		$('.dropdownMenuContainerIII7:hover').length != 0
-	//
-	// 	) {
-	// 		$(".dropdownMenuIII7").css("display", "block");
-	//
-	// 	} else {
-	// 		$(".dropdownMenuIII7").fadeOut(100);
-	// 		$(".dropdownMenuContainerIII7").css("display", "none");
-	//
-	// 	}
-	//
-	// });
+	$(".seventhIII").mouseleave(function () {
+	
+		if (
+	
+			$('.dropdownMenuContainerIII7:hover').length != 0
+	
+		) {
+			$(".dropdownMenuIII7").css("display", "block");
+	
+		} else {
+			$(".dropdownMenuIII7").fadeOut(100);
+			$(".dropdownMenuContainerIII7").css("display", "none");
+	
+		}
+	
+	});
 
 
 	$(".dropdownMenuContainerIII1").mouseleave(function () {
@@ -984,17 +984,17 @@ $(document).ready(function () {
 		}
 	});
 
-	// $(".dropdownMenuContainerIII7").mouseleave(function () {
-	// 	if (
-	// 		$('.seventhIII:hover').length != 0
-	//
-	// 	) {
-	// 		$(".dropdownMenuIII7").css("display", "block");
-	// 	} else {
-	// 		$(".dropdownMenuIII7").fadeOut(100);
-	// 		$(".dropdownMenuContainerIII7").css("display", "none");
-	// 	}
-	// });
+	$(".dropdownMenuContainerIII7").mouseleave(function () {
+		if (
+			$('.seventhIII:hover').length != 0
+	
+		) {
+			$(".dropdownMenuIII7").css("display", "block");
+		} else {
+			$(".dropdownMenuIII7").fadeOut(100);
+			$(".dropdownMenuContainerIII7").css("display", "none");
+		}
+	});
 
 
 // $(".dropdownMenuContainer").mouseleave(function () {

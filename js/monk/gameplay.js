@@ -37,6 +37,7 @@ $(document).ready(function() {
 			$(".ssrp6").fadeIn(600); //симпл ст
 			$(".asrp1").fadeIn(600); //ast
 			$(".smrp6").fadeIn(600); //smrp
+			$(".text-add1").fadeIn(600); //дополнение про ветер при пике бочонка
 
 			$(".rb3").removeClass("fa-xmark");
 			$(".rb3").addClass("fa-check");
@@ -45,6 +46,7 @@ $(document).ready(function() {
 			$(".ssrp6").fadeOut(200);
 			$(".asrp1").fadeOut(200);
 			$(".smrp6").fadeOut(200);
+			$(".text-add1").fadeOut(200);
 
 			$(".rb3").removeClass("fa-check");
 			$(".rb3").addClass("fa-xmark");

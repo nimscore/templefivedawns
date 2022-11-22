@@ -493,7 +493,10 @@ code {
 
 .seventh,
 .seventhII,
-.seventhIII {
+.seventhIII,
+.second,
+.secondII,
+.secondIII {
 	pointer-events: none;
 }
 
