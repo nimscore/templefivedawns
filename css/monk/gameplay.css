@@ -21,7 +21,7 @@
 }
 
 .rotation-tabs {
-	background: url("../../img/monk_brewmaster-bg.jpg") no-repeat right top;
+	/* background: url("../../img/monk_brewmaster-bg.jpg") no-repeat right top; */
 	background-size: cover;
 	display: flex;
 	flex-flow: column nowrap;
@@ -152,6 +152,21 @@
 }
 /*ТАБЫ*/
 
+.ww-bg-rot {
+	background: url("../../img/monk_windwalker-bg.jpg") no-repeat right top;
+	background-size: cover;
+}
+
+.mw-bg-rot {
+	background: url("../../img/monk_mistweaver-bg.jpg") no-repeat right top;
+	background-size: cover;
+}
+
+.bm-bg-rot {
+	background: url("../../img/monk_brewmaster-bg.jpg") no-repeat right top;
+	background-size: cover;
+}
+
 /* 1920PX И МЕНЬШЕ */
 @media only screen and (max-width: 1920px) {
 	.btn-rotation-1,
@@ -209,7 +224,7 @@
 	}
 
 	.rotation-tabs-in {
-		background: url("../../img/monk_brewmaster-bg.jpg") no-repeat right top;
+		/* background: url("../../img/monk_brewmaster-bg.jpg") no-repeat right top; */
 		border: #9d9063 solid 0.1vw;
 		box-shadow: 0 0 0.6vw 0.6vw rgba(0, 0, 0, 0.6);
 		flex-flow: row wrap;
@@ -253,6 +268,21 @@
 	.btn-rotation-3,
 	.btn-rotation-4 {
 		padding: 1.4vw 16.5% 1vw 16.5%;
+	}
+
+	.ww-bg-rot {
+		background: url("../../img/monk_windwalker-bg.jpg") no-repeat right top;
+		background-size: cover;
+	}
+
+	.mw-bg-rot {
+		background: url("../../img/monk_mistweaver-bg.jpg") no-repeat right top;
+		background-size: cover;
+	}
+
+	.bm-bg-rot {
+		background: url("../../img/monk_brewmaster-bg.jpg") no-repeat right top;
+		background-size: cover;
 	}
 }
 
