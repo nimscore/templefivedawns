@@ -340,6 +340,26 @@ img {
 	filter: none;
 }
 
+.green-border {
+	border: #00e489 solid 0.22vw;
+	filter: none;
+}
+
+.yellow-border {
+	border: #ffee00 solid 0.22vw;
+	filter: none;
+}
+
+.red-border {
+	border: #c70011 solid 0.22vw;
+	filter: none;
+}
+
+.prpl-border {
+	border: #a330c9 solid 0.22vw;
+	filter: none;
+}
+
 .pick-tal {
 	background-color: rgba(255, 209, 0, 0.8);
 	filter: none;
@@ -627,6 +647,22 @@ img {
 
 	.red-tal {
 		background-color: #f23f4d;
+	}
+
+	.green-border {
+		border: #00e489 solid 0.22vw;
+	}
+
+	.yellow-border {
+		border: #ffee00 solid 0.22vw;
+	}
+
+	.red-border {
+		border: #c70011 solid 0.22vw;
+	}
+
+	.prpl-border {
+		border: #a330c9 solid 0.22vw;
 	}
 
 	#tn1,
