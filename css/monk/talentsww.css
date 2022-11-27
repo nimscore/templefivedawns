@@ -257,6 +257,54 @@ img {
 	bottom: 0;
 }
 
+#ttm1,
+#ttm2,
+#ttm3,
+#ttm4,
+#ttm5,
+#ttm6,
+#ttm7,
+#ttm8,
+#ttm9,
+#ttm10,
+#ttm11,
+#ttm12,
+#ttm13,
+#ttm14,
+#ttm15,
+#ttm16,
+#ttm17,
+#ttm18,
+#ttm19,
+#ttm20,
+#ttm21,
+#ttm22,
+#ttm23,
+#ttm24,
+#ttm25,
+#ttm26,
+#ttm27,
+#ttm28,
+#ttm29,
+#ttm30,
+#ttm31,
+#ttm32,
+#ttm33,
+#ttm34,
+#ttm35,
+#ttm36,
+#ttm37,
+#ttm38,
+#ttm39,
+#ttm40,
+#ttm41,
+#ttm42,
+#ttm43,
+#ttm44,
+#ttm45 {
+	z-index: 1;
+}
+
 #tt10,
 #tt21,
 #tt26,
@@ -309,13 +357,13 @@ img {
 }
 
 .tal-icon-ww {
-	width: 2.5vw;
-	height: 2.5vw;
+	width: 2rem;
+	height: 2rem;
 	background-color: #9d9063;
-	margin: 0.4vw 0.2vw 0.4vw 0.2vw;
+	margin: 0.2vw 0.2vw 0.2vw 0.2vw;
 	box-shadow: 0 0 0.4vw 0.1vw rgba(0, 0, 0, 0.6);
 	filter: grayscale(100%);
-	border: #9d9063 solid 0.22vw;
+	border: #9d9063 solid 0.4rem;
 }
 
 .active-tal {
@@ -341,22 +389,22 @@ img {
 }
 
 .green-border {
-	border: #00e489 solid 0.22vw;
+	border: #00e489 solid 0.1vw;
 	filter: none;
 }
 
 .yellow-border {
-	border: #ffee00 solid 0.22vw;
+	border: #ffee00 solid 0.1vw;
 	filter: none;
 }
 
 .red-border {
-	border: #c70011 solid 0.22vw;
+	border: #c70011 solid 0.1vw;
 	filter: none;
 }
 
 .prpl-border {
-	border: #a330c9 solid 0.22vw;
+	border: #a330c9 solid 0.1vw;
 	filter: none;
 }
 
@@ -407,12 +455,12 @@ img {
 		margin: 0.4vw;
 	}
 
-	.tal-icon-ww {
+	/* .tal-icon-ww {
 		width: 1.8vw;
 		height: 1.8vw;
 		margin: 0.4vw 0.2vw 0.4vw 0.2vw;
 		box-shadow: 0 0 0.6vw 0.6vw rgba(0, 0, 0, 0.6);
-	}
+	} */
 }
 
 /* 1440PX И МЕНЬШЕ */
@@ -635,8 +683,8 @@ img {
 	}
 
 	.tal-icon-ww {
-		width: 8.3vw;
-		height: 8.3vw;
+		/* width: 2rem;
+		height: 2rem; */
 		margin: 1.8vw 0.6vw 1.8vw 0.6vw;
 		box-shadow: 0 0 0.6vw 0.6vw rgba(0, 0, 0, 0.6);
 	}
