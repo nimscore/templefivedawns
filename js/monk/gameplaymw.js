@@ -3,16 +3,12 @@ $(document).ready(function() {
 	// ПИКИ ТАЛАНТОВ
 	$(".rb1").click(function(){ //выброс ци
 		if ($(".srp19").css('display') == 'none') {
-			$(".srp19").fadeIn(600); //ст
-			$(".crp19").fadeIn(600); //клив
-			$(".arp19").fadeIn(600); //аое
+
 
 			$(".rb1").removeClass("fa-xmark");
 			$(".rb1").addClass("fa-check");
 		} else {
-			$(".srp19").fadeOut(200);
-			$(".crp19").fadeOut(200);
-			$(".arp19").fadeOut(200);
+
 
 			$(".rb1").removeClass("fa-check");
 			$(".rb1").addClass("fa-xmark");
@@ -21,14 +17,12 @@ $(document).ready(function() {
 
 	$(".rb2").click(function(){ //Освежающий нефритовый ветер
 		if ($(".rp10").css('display') == 'none') {
-			$(".rp10").fadeIn(600); //опенер
-			$(".srp17").fadeIn(600); //ст
+
 
 			$(".rb2").removeClass("fa-xmark");
 			$(".rb2").addClass("fa-check");
 		} else {
-			$(".rp10").fadeOut(200);
-			$(".srp17").fadeOut(200);
+
 
 			$(".rb2").removeClass("fa-check");
 			$(".rb2").addClass("fa-xmark");
@@ -65,16 +59,12 @@ $(document).ready(function() {
 
 	$(".rb9").click(function(){ //Подъем азерита
 		if ($(".srp15").css('display') == 'none') {
-			$(".srp15").fadeIn(600); //ст
-			$(".crp15").fadeIn(600); //клив
-			$(".arp15").fadeIn(600); //аое
+
 
 			$(".rb9").removeClass("fa-xmark");
 			$(".rb9").addClass("fa-check");
 		} else {
-			$(".srp15").fadeOut(0);
-			$(".crp15").fadeOut(0);
-			$(".arp15").fadeOut(0);
+
 
 			$(".rb9").removeClass("fa-check");
 			$(".rb9").addClass("fa-xmark");
@@ -111,16 +101,12 @@ $(document).ready(function() {
 
 	$(".rb12").click(function(){ //Затуманенная концентрация
 		if ($(".srp11").css('display') == 'none') {
-			$(".srp11").fadeIn(600); //ст
-			$(".crp11").fadeIn(600); //клив
-			$(".arp11").fadeIn(600); //аое
+
 
 			$(".rb12").removeClass("fa-xmark");
 			$(".rb12").addClass("fa-check");
 		} else {
-			$(".srp11").fadeOut(200);
-			$(".crp11").fadeOut(200);
-			$(".arp11").fadeOut(200);
+
 
 			$(".rb12").removeClass("fa-check");
 			$(".rb12").addClass("fa-xmark");
@@ -129,16 +115,12 @@ $(document).ready(function() {
 
 	$(".rb13").click(function(){ //Живенькое оживление
 		if ($(".srp11").css('display') == 'none') {
-			$(".srp11").fadeIn(600); //ст
-			$(".crp11").fadeIn(600); //клив
-			$(".arp11").fadeIn(600); //аое
+
 
 			$(".rb13").removeClass("fa-xmark");
 			$(".rb13").addClass("fa-check");
 		} else {
-			$(".srp11").fadeOut(200);
-			$(".crp11").fadeOut(200);
-			$(".arp11").fadeOut(200);
+
 
 			$(".rb13").removeClass("fa-check");
 			$(".rb13").addClass("fa-xmark");
