@@ -257,51 +257,97 @@ img {
 	bottom: 0;
 }
 
-#ttm1,
-#ttm2,
-#ttm3,
-#ttm4,
-#ttm5,
-#ttm6,
-#ttm7,
-#ttm8,
-#ttm9,
-#ttm10,
-#ttm11,
-#ttm12,
-#ttm13,
-#ttm14,
-#ttm15,
-#ttm16,
-#ttm17,
-#ttm18,
-#ttm19,
-#ttm20,
-#ttm21,
-#ttm22,
-#ttm23,
-#ttm24,
-#ttm25,
-#ttm26,
-#ttm27,
-#ttm28,
-#ttm29,
-#ttm30,
-#ttm31,
-#ttm32,
-#ttm33,
-#ttm34,
-#ttm35,
-#ttm36,
-#ttm37,
-#ttm38,
-#ttm39,
-#ttm40,
-#ttm41,
-#ttm42,
-#ttm43,
-#ttm44,
-#ttm45 {
+#rttm1,
+#rttm2,
+#rttm3,
+#rttm4,
+#rttm5,
+#rttm6,
+#rttm7,
+#rttm8,
+#rttm9,
+#rttm10,
+#rttm11,
+#rttm12,
+#rttm13,
+#rttm14,
+#rttm15,
+#rttm16,
+#rttm17,
+#rttm18,
+#rttm19,
+#rttm20,
+#rttm21,
+#rttm22,
+#rttm23,
+#rttm24,
+#rttm25,
+#rttm26,
+#rttm27,
+#rttm28,
+#rttm29,
+#rttm30,
+#rttm31,
+#rttm32,
+#rttm33,
+#rttm34,
+#rttm35,
+#rttm36,
+#rttm37,
+#rttm38,
+#rttm39,
+#rttm40,
+#rttm41,
+#rttm42,
+#rttm43,
+#rttm44,
+#rttm45,
+#rtt1,
+#rtt2,
+#rtt3,
+#rtt4,
+#rtt5,
+#rtt6,
+#rtt7,
+#rtt8,
+#rtt9,
+#rtt10,
+#rtt11,
+#rtt12,
+#rtt13,
+#rtt14,
+#rtt15,
+#rtt16,
+#rtt17,
+#rtt18,
+#rtt19,
+#rtt20,
+#rtt21,
+#rtt22,
+#rtt23,
+#rtt24,
+#rtt25,
+#rtt26,
+#rtt27,
+#rtt28,
+#rtt29,
+#rtt30,
+#rtt31,
+#rtt32,
+#rtt33,
+#rtt34,
+#rtt35,
+#rtt36,
+#rtt37,
+#rtt38,
+#rtt39,
+#rtt40,
+#rtt41,
+#rtt42,
+#rtt43,
+#rtt44,
+#rtt45,
+#rtt46 {
 	z-index: 1;
 }
 
@@ -363,7 +409,7 @@ img {
 	margin: 0.2vw 0.2vw 0.2vw 0.2vw;
 	box-shadow: 0 0 0.4vw 0.1vw rgba(0, 0, 0, 0.6);
 	filter: grayscale(100%);
-	border: #9d9063 solid 0.4rem;
+	border: #9d9063 solid 0.1rem;
 }
 
 .active-tal {
@@ -443,9 +489,15 @@ img {
 		width: 100%;
 	}
 
+	#double-tal {
+		padding-top: 1.3vw;
+		font-size: 1vw;
+	}
+
 	#talents-swap-spec,
 	#talents-swap-monk {
-		font-size: 2.6vw;
+		padding-top: 1vw;
+		font-size: 1.8vw;
 	}
 
 	.row1-tc,
@@ -455,12 +507,12 @@ img {
 		margin: 0.4vw;
 	}
 
-	/* .tal-icon-ww {
-		width: 1.8vw;
-		height: 1.8vw;
-		margin: 0.4vw 0.2vw 0.4vw 0.2vw;
-		box-shadow: 0 0 0.6vw 0.6vw rgba(0, 0, 0, 0.6);
-	} */
+	.tal-icon-ww {
+		/* width: 1.8vw;
+		height: 1.8vw; */
+		margin: 0.85vw 0.2vw 0.85vw 0.2vw;
+		box-shadow: 0 0 0.6vw 0.3vw rgba(0, 0, 0, 0.6);
+	}
 }
 
 /* 1440PX И МЕНЬШЕ */
@@ -508,8 +560,8 @@ img {
 
 	#talents-swap-spec,
 	#talents-swap-monk {
-		/*padding-top: 0.85vw;*/
-		font-size: 3.2vw;
+		padding-top: 0.9vw;
+		font-size: 2.6vw;
 	}
 
 	.talents-tabs-in {
@@ -539,9 +591,15 @@ img {
 		width: 100%;
 	}
 
+	#double-tal {
+		padding-top: 1.4vw;
+		font-size: 1.8vw;
+	}
+
 	#talents-swap-spec,
 	#talents-swap-monk {
-		font-size: 4vw;
+		padding-top: 1vw;
+		font-size: 2.8vw;
 	}
 }
 
@@ -650,7 +708,7 @@ img {
 	}
 
 	#double-tal {
-		padding-top: 3.5vw;
+		padding-top: 2.6vw;
 		font-size: 6vw;
 	}
 
@@ -666,7 +724,8 @@ img {
 
 	#talents-swap-spec,
 	#talents-swap-monk {
-		font-size: 10vw;
+		padding-top: 2vw;
+		font-size: 8vw;
 	}
 
 	.row1-tc,
