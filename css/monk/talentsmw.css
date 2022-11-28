@@ -347,7 +347,16 @@ img {
 #rtt43,
 #rtt44,
 #rtt45,
-#rtt46 {
+#rtt46,
+#rtt47,
+#rtt48,
+#rtt49,
+#rtt50,
+#rtt51,
+#rtt52,
+#rtt53,
+#rtt54,
+#rtt55 {
 	z-index: 1;
 }
 
@@ -420,7 +429,7 @@ img {
 }
 
 .green-tal {
-	background-color: #00FF99;
+	background-color: #00ff99;
 	filter: none;
 }
 
