@@ -50,14 +50,14 @@ h3 a {
 a {
 	text-decoration: none;
 	color: #00ff99;
-	font-size: 0.7vw;
+	font-size: 0.8vw;
 	line-height: 1.2vw;
 }
 
 p {
 	color: #9d9063;
 	font-family: Montserrat, sans-serif;
-	font-size: 0.7vw;
+	font-size: 0.8vw;
 	line-height: 1.2vw;
 	font-weight: 500;
 	margin: 0;
@@ -67,7 +67,7 @@ p {
 li {
 	color: #9d9063;
 	font-family: Montserrat, sans-serif;
-	font-size: 0.7vw;
+	font-size: 0.8vw;
 	line-height: 1.2vw;
 	font-weight: 500;
 	margin: 0;
@@ -76,7 +76,7 @@ li {
 
 code {
 	font-family: Montserrat, sans-serif;
-	font-size: 0.7vw;
+	font-size: 0.8vw;
 	line-height: 1.2vw;
 }
 
@@ -460,22 +460,22 @@ wb {
 	}
 
 	a {
-		font-size: 1.1vw;
+		font-size: 1.2vw;
 		line-height: 1.5vw;
 	}
 
 	p {
-		font-size: 1.1vw;
+		font-size: 1.2vw;
 		line-height: 1.5vw;
 	}
 
 	li {
-		font-size: 1.1vw;
+		font-size: 1.2vw;
 		line-height: 1.5vw;
 	}
 
 	code {
-		font-size: 1.1vw;
+		font-size: 1.2vw;
 		line-height: 1.5vw;
 	}
 
