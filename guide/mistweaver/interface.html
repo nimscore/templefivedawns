@@ -176,51 +176,6 @@
 		Хотя различные модификаторы макросов могут выглядеть сложно, но стоит понять на простых примерах
 		как они работают и вам все станет понятно, чтобы в дальнейшем самостоятельно писать
 		макросы под конкретно ваши нужды.</p>
-		<br>
-		<p><a href="https://ru.wowhead.com/spell=115546/">Вызов</a> <wb>(таунт)</wb> / <a
-			href="https://ru.wowhead.com/spell=115546/">Вызов</a> в статую <wb>(АоЕ таунт)</wb>.</p>
-		<li>При обычном использовании будет обычный таунт, если нажать таунт с шифтом, то будет АоЕ таунт в статую.</li>
-		<div class="format-code"><code>#showtooltip Вызов
-			<br>/tar [mod:shift] Статуя Черного Быка
-			<br>/cast Вызов
-			<br>/targetlasttarget [mod:shift]</code></div>
-		<br>
-		<p><a href="https://ru.wowhead.com/spell=115546/">Вызов</a> <wb>(таунт)</wb> в статую.</p>
-		<div class="format-code"><code>/target Статуя Черного Быка
-			<br>/cast Вызов
-			<br>/targetlasttarget</code></div>
-		<br>
-		<p>Применение <a href="https://ru.wowhead.com/spell=325216">некро</a> под себя.
-		<li>Всегда будет разливать <a href="https://ru.wowhead.com/spell=325216">некро</a> под вашего
-			персонажа по центру, без необходимости кликать мышкой.
-		</li>
-		<div class="format-code"><code>#showtooltip
-			<br>/cast [@player] отвар из костяной пыли</code></div>
-		<br>
-		<p>Применение <a href="https://ru.wowhead.com/spell=325216">некро</a> под курсор.
-		<li>Всегда будет разливать <a href="https://ru.wowhead.com/spell=325216">некро</a> под вашим курсором,
-			без необходимости кликать мышкой.
-		</li>
-		<div class="format-code"><code>#showtooltip
-			<br>/cast [@cursor] отвар из костяной пыли</code></div>
-		<br>
-		<p>Снятие с себя эффекта <a href="https://ru.wowhead.com/spell=1022">боп</a></p>
-		<li>Снимает с вас <a href="https://ru.wowhead.com/spell=1022">боп</a>, который вам иногда будут
-			давать чтобы сбросить с вас негативные эффекты. <a href="https://ru.wowhead.com/spell=1022">боп</a> сбрасывает
-			с вас агро и противники перестают вас атаковать, поэтому его важно моментально снять, чтобы противники
-			не убили другого игрока.
-		</li>
-		<div class="format-code"><code>#showtooltip благословение защиты
-			<br>/cancelaura благословение защиты</code></div>
-		<br>
-		<p>Снятие с себя эффекта <a href="https://ru.wowhead.com/spell=116847">ветер</a></p>
-		<li>Нажатие с зажатым <wb>shift</wb> снимет с вас эффект <a href="https://ru.wowhead.com/spell=116847">ветер</a>.
-			Это иногда полезно, чтобы не взять случайно лишних противников в подземельях или других активностях.
-			Обычное нажатие активирует на вас <a href="https://ru.wowhead.com/spell=116847">ветер</a>.
-		</li>
-		<div class="format-code"><code>#showtooltip
-			<br>/cast [nomod] порыв нефритового ветра
-			<br>/cancelaura [mod:shift] порыв нефритового ветра</code></div>
 		<div class="divider">
 			<img class="divider-main"
 					 src="../../img/divider.png"
@@ -229,19 +184,28 @@
 					 src="../../img/divider-mob.png"
 					 alt="divider-mob">
 		</div>
-		<p>Все в одном: экстренное исцеление. (при взятом таланте <a href="https://ru.wowhead.com/spell=115175/">нитка</a>)</p>
-		<li>При обычном нажатии применяется <a href="https://ru.wowhead.com/spell=322101/">устранение</a>.
-			Зажимая <wb>shift</wb> вы начнете применять в себя <a href="https://ru.wowhead.com/spell=115175/">нитка</a>,
-			что позволит вам мнгновенно кастовать в себя <a href="https://ru.wowhead.com/spell=116670/">вивик</a>
-			при зажатом <wb>alt</wb>.
+		<p><wb>Макросы с чтением заклинаний</wb></p><br>
+		<li>В рейдах, ткачи туманов, как правило хотят дочитывать полностью свое заклинание <a href="https://ru.wowhead.com/spell=191837">Купель сущности</a>. 
+			Однако, при взятом таланте <a href="https://ru.wowhead.com/spell=274909">Сгущающийся туман</a> вы так же хотите как можно быстрее 
+			потратить кд своего <a href="https://ru.wowhead.com/spell=107428">Удар восходящего солнца</a>, чаще всего прерывая 
+			произнесение <a href="https://ru.wowhead.com/spell=191837">Купель сущности</a>. Этот макрос не даст прервать произнесение 
+			заклинания, если вы его читаете. Для каждой способности, которая может прервать ваше заклинание нужно делать отдельный 
+			аналогичный макрос.
 		</li>
-		<div class="format-code"><code>#showtooltip устранение вреда
-			<br>/use [nomod] устранение вреда
-			<br>/use [mod:shift, @player] успокаивающий туман
-			<br>/use [mod:alt, @player] оживить</code></div>
+		<div class="format-code"><code>#showtooltip
+			<br>/stopmacro [channeling:Купель сущности]
+			<br>/cast Удар восходящего солнца</code></div>
+		<div class="divider">
+			<img class="divider-main"
+					 src="../../img/divider.png"
+					 alt="divider">
+			<img class="divider-mob"
+					 src="../../img/divider-mob.png"
+					 alt="divider-mob">
+		</div>
 		<br>
 		<p><a href="https://ru.wowhead.com/spell=115098/">чи вейв</a> в себя/союзника/противника.</p>
-		<li>Этот макрос заставит <a href="https://ru.wowhead.com/spell=115098/">чи вейв</a>
+		<li>Этот макрос заставит <a href="https://ru.wowhead.com/spell=115098">чи вейв</a>
 			сначала исцелить вас и только потом уже улететь дальше. При зажатом <wb>ctrl</wb>
 			<a href="https://ru.wowhead.com/spell=115098/">чи вейв</a> нанесет урон противнику или исцелит выбранного
 			союзника, в зависимости от вашей текущей выбранной цели.
@@ -256,11 +220,31 @@
 		<div class="format-code"><code>#showtooltip Оживить
 			<br>/cast [target=mouseover,help,nodead][]Оживить</code></div>
 		<br>
+		<p><a href="https://ru.wowhead.com/spell=115175">успокаивающий</a> по маусоверу.</p>
+		<li>Если под мышкой не будет цели, то <a href="https://ru.wowhead.com/spell=115175">успокаивающий</a> применится к вам.
+		</li>
+		<div class="format-code"><code>#showtooltip Успокаивающий туман
+			<br>/cast [target=mouseover,help,nodead][]Успокаивающий туман</code></div>
+		<br>
 		<p><a href="https://ru.wowhead.com/spell=115450/">диспел</a> по маусоверу.</p>
 		<li>Если под мышкой не будет цели, то <a href="https://ru.wowhead.com/spell=115450/">диспел</a> применится к вам.
 		</li>
 		<div class="format-code"><code>#showtooltip Детоксикация
-			<br>/cast [target=mouseover,help,nodead][]Детоксикация;Дет оксикация</code></div>
+			<br>/cast [target=mouseover,help,nodead][]Детоксикация;Детоксикация</code></div>
+		<br>
+		<p>Применение <a href="https://ru.wowhead.com/spell=325216">некро</a> под себя.
+		<li>Всегда будет разливать <a href="https://ru.wowhead.com/spell=325216">некро</a> под вашего
+			персонажа по центру, без необходимости кликать мышкой.
+		</li>
+		<div class="format-code"><code>#showtooltip
+			<br>/cast [@player] отвар из костяной пыли</code></div>
+		<br>
+		<p>Применение <a href="https://ru.wowhead.com/spell=325216">некро</a> под курсор.
+		<li>Всегда будет разливать <a href="https://ru.wowhead.com/spell=325216">некро</a> под вашим курсором,
+			без необходимости кликать мышкой.
+		</li>
+		<div class="format-code"><code>#showtooltip
+			<br>/cast [@cursor] отвар из костяной пыли</code></div>
 		<div class="divider">
 			<img class="divider-main"
 					 src="../../img/divider.png"
@@ -291,18 +275,8 @@
 					 src="../../img/divider-mob.png"
 					 alt="divider-mob">
 		</div>
-		<p>Пассивное применение PvP-таланта <a href="https://ru.wowhead.com/spell=202335">дабл бочка</a></p>
-		<li>Утилити макрос для открытого мира, который автоматически будет применять PvP-талант
-			<a href="https://ru.wowhead.com/spell=202335">дабл бочка</a>, когда это возможно. Просто используйте
-			и не задумывайтесь о нем. Макрос будет работать, даже если вы не взяли этот PvP-талант (талант конечно
-			же в таком случае работать не будет).
-		</li>
-		<div class="format-code"><code>#showtooltip удар бочонком
-			<br>/cast пара бочек
-			<br>/cast удар бочонком</code></div>
-		<br>
 		<p>Ставит метку черепа на вашу текущую цель.
-		<li>Танку крайне важно направлять урон своей группы в нужные цели. Для этого используются метки.
+		<li>Крайне важно направлять урон своей группы в нужные цели. Для этого используются метки.
 		Метка черепа - это первоочередная цель, которая должна умереть первой.
 		</li>
 		<div class="format-code"><code>/tm 8</code></div>
@@ -313,8 +287,7 @@
 		<div class="format-code"><code>/tm 7</code></div>
 		<br>
 		<p>Ставит синюю (квадрат) метку на землю.
-		<li>Помогает позиционированию вашей группы. Вы, как танк, иногда просите встать свою группу в определенное
-		место, чтобы например заставить противников подойти поближе.
+		<li>Помогает позиционированию вашей группы.
 		</li>
 		<div class="format-code"><code>/wm 1</code></div>
 		<br>
@@ -341,7 +314,7 @@
 			начиная от графических индикаций о каких-то событиях, замены панелей способностей и панелей отображения группы/рейда,
 			так и для улучшения вашей эффективности в бою, например, напоминания о готовности к применению какой-то вашей
 			способности, отслеживания баффов/дебаффов, всплывающие напоминания и предупреждения о способностях боссах.
-			Здесь представлены некоторые из наиболее рекомендуемых и часто используемых аддонов для Хмелевара, которые,
+			Здесь представлены некоторые из наиболее рекомендуемых и часто используемых аддонов для Ткача Туманов, которые,
 			конечно, не являются обязательными для игры, но могут значительно увеличить количество получаемой вами
 			информации о происходящем в бою или просто сделать игру для вас более приятной.
 			<br>
@@ -358,7 +331,42 @@
 			</li>
 		<div class="format-code"><code>..\World of Warcraft\_retail_\Interface\AddOns</code></div>
 
+		<div class="divider">
+			<img class="divider-main"
+					 src="../../img/divider.png"
+					 alt="divider">
+			<img class="divider-mob"
+					 src="../../img/divider-mob.png"
+					 alt="divider-mob">
+		</div>
+		<h3>ГРУППА АДДОНОВ ЛЕКАРЯ</h3>
 		<br>
+		<p><wb>ЗАМЕНА РЕЙДОВЫХ ФРЕЙМОВ</wb><br>
+		Несмотря на то, что стандартный интерфейс развивается уже очень давно, все равно стандартные фреймы близзард страдают от 
+		недостатка предоставляемой игроку информации и его союзникам в бою. Они отображают лимитированное количество 
+		эффектов на ваших союзниках и вы не имеете возможности быстро получать информацию и реагировать на изменения в бою. 
+		Следующие аддоны пытаются решить эту проблему.</p>
+		<li><a href="https://www.curseforge.com/wow/addons/grid2">Grid2</a></li>
+		<li><a href="https://www.curseforge.com/wow/addons/vuhdo">VuhDo</a></li>
+		<li><a href="https://www.curseforge.com/wow/addons/bdui">bdUI</a></li>
+		<li><a href="https://www.curseforge.com/wow/addons/shadowed-unit-frames">Shadowed Unit Frames</a></li>
+
+		<br>
+		<p><wb>ЗАМЕНА МАКРОСАМ НА МАУСОВЕР</wb><br>
+		Один из главных недостатков макросов на маусовер (чтение заклинаний при наведении мыши на цель) - это 
+		создание отдельного макроса на каждую вашу способность, которую вы хотите использовать по маусоверу. 
+		Аддон <a href="https://www.curseforge.com/wow/addons/clique">Clique</a> полностью заменяет 
+			эти макросы на маусовер. В Dragonflight близзард попытались сделать встроенную систему с функциями этого аддона, 
+		но получилось плохо и работает она странно, существуя в урезанном виде от возможностей этого аддона.</p>
+
+		<div class="divider">
+			<img class="divider-main"
+					 src="../../img/divider.png"
+					 alt="divider">
+			<img class="divider-mob"
+					 src="../../img/divider-mob.png"
+					 alt="divider-mob">
+		</div>
 		<h3><a href="https://www.tukui.org/welcome.php">ElvUI</a></h3>
 		<li>Аддон для <wb>полного</wb> изменения интерфейса игры. Заменяет каждый элемент стандартного интерфейса
 		и дает доступ к безграничным настройкам интерфейса под себя. Это огромный комбайн, который изменяет все.
@@ -406,11 +414,6 @@
 		комбайн, который крайне полезен в рейдах. Отслеживание доступных внешних сейвов от других игроков, отслеживание
 			кулдаунов своих напарников и многое, многое другое. Как правило обязательный к установке, но не требующий
 			настройки, т.к. рейд-лидер вам с помощью него сам все расскажет что нужно делать в бою.</li>
-		<br>
-		<li><a href="https://www.curseforge.com/wow/addons/omen-threat-meter">Omen</a> - отображает количество
-			угрозы, которое у вас есть для определенного противника. Позволяет контролировать когда с вас могут сорвать
-			противника, чтобы этого не допустить. Долгое время он был неактуальным, однако в последнее время о нем снова
-			все чаще вспоминают из-за возвращающихся проблем с генерацией угрозы у танков.</li>
 		<br>
 		<li><a href="https://www.curseforge.com/wow/addons/simulationcraft">SimulationCraft</a> - создает строку
 		импорта со всеми данными о вашей экипировке на вашем персонаже и в сумках/банке и прочих местах.
@@ -462,39 +465,34 @@
 			позволяя игрокам заменять стандартные панели способностей, создавать так называемые "ауры" под каждый бой и
 			обмениваться ими, отслеживать заклинания других игроков и многое, многое другое. В этом разделе мы выделили
 			некоторые из лучших аур для Хмелевара, хотя существует так много различных вариантов, что
-			мы настоятельно рекомендуем посетить <a href="https://wago.io/dragonflight-weakauras/classes/monk/brewmaster">Wago.io</a>,
+			мы настоятельно рекомендуем посетить <a href="https://wago.io/dragonflight-weakauras/classes/monk/mistweaver">Wago.io</a>,
 			чтобы найти то, что лучше всего соответствует вашим потребностям.</p>
 		<br>
-		<li><a href="https://wago.io/VJQ3RMoFf">Сборка от Llarold</a></li>
-		<img class="img-html" src="https://wow.zamimg.com/uploads/guide/images/26564.jpg">
-		<p>Она отслеживает все важные моменты:
-			готовность/время восстановления способностей, время действия/готовность <a href="https://ru.wowhead.com/spell=322507"></a>,
-			готовность <a href="https://ru.wowhead.com/spell=119582"></a>, значение <a href="https://ru.wowhead.com/spell=115069"></a>,
-			<a href="https://ru.wowhead.com/spell=121253"></a>, <a href="https://ru.wowhead.com/spell=107428"></a>,
-			<a href="https://ru.wowhead.com/spell=196736"></a>, <a href="https://ru.wowhead.com/spell=116847"></a>, <a href="https://ru.wowhead.com/spell=122281"></a> и т.д.
-		<br><wb>Внимание:</wb> в сборке присутствуют различные звуки уведомлений. Измените или отключите звуки по мере необходимости.
-		<br>Также, вы можете выбрать любой другой набор аур от Afenar, Luxthos, Ipse и т.д. которые позволяют отслеживать ваши способности.</p>
+
+		<img class="img-html" src="https://media.wago.io/screenshots/rk1HiNozM/636cac169c128740afe78cc7.gif">
+		<li><a href="https://wago.io/Afenar_Monk">Сборка от Afenar</a></li>
 		<br>
-		<li><a href="https://wago.io/EyFJoziKf">Внешние защитные способности</a></li>
-		<img class="img-html" src="https://wow.zamimg.com/uploads/screenshots/normal/761373.jpg">
-		<p>Это группа аур, которая отслеживает длительность активных на вас внешних защитных способностей от ваших
-			союзников. Это динамическая группа, то есть она начинается слева и растет вправо, и ее ширина будет изменяться
-			в зависимости от количества наложенных на вас защитных способностей (обычно 1-3 иконки максимум).
-			<br><wb>Внимание:</wb> здесь используются звуки, указывающие на окончание времени действия
-			на вас защитных способностей. Измените или отключите звуки по мере необходимости.</p>
+		<li><a href="https://wago.io/4IdYy8LtF">Сборка от Onyo</a></li>
+		<p>Также, вы можете выбрать любой другой набор аур от Luxthos, Ipse и т.д. которые позволяют отслеживать ваши способности.</p>
 		<br>
-		<li><a href="https://wago.io/NormalStagger">Отслеживание пошатывания</a></li>
-		<p>Аура дает дополнительную информацию о пошатывании.
-			Стандартный интерфейс игры отображает пошатывание всего лишь до 100% вашего здоровья, когда фактическое
-			ограничение 1000%. Это аура позволяет обойти это ограничение стандартного интерфейса.</p>
+		<img class="img-html" src="https://wow.zamimg.com/uploads/screenshots/normal/765655.jpg">
+		<li><a href="https://wago.io/bqOGiflS4">Отслеживание Купель сущности</a></li>
+		<p>Аура отслеживает количество раненых целей в радиусе действия <a href="https://ru.wowhead.com/spell=191837">Купель сущности</a>. 
+		Поскольку радиус действия этой способности меньше, чем обычная адльность заклинаний, то нахождение союзника в 
+		зоне досягаемости совсем не означает, что <a href="https://ru.wowhead.com/spell=191837">Купель сущности</a> до него долетит. 
+		Эта аура призвана исключить момент случайности и гаданий хватает расстояния или нет.</p>
 		<br>
-		<li><a href="https://wago.io/eQeA3xlzY">Здоровье Статуи Черного Быка</a></li>
-		<img class="img-html" src="https://media.wago.io/screenshots/eQeA3xlzY/5d2cc303e83bb16c0c4589dd.jpg">
-		<p>Эту, либо любую другую понравившуюся вам ауру,
-			которая отображает здоровье вашей статуи.</p>
+		<img class="img-html" src="https://media.wago.io/screenshots/peOrk_Xja/638095a090d3c31e97859d56.png">
+		<li><a href="https://wago.io/peOrk_Xja">Отслеживание Заживляющий туман</a></li>
+		<p>Аура очень важна в Dragonflight. Она показывает количество активных <a href="https://www.wowhead.com/ru/spell=115151">Заживляющий туман</a> 
+		на данный момент на вашей группе, а также таймер окончания следующего <a href="https://www.wowhead.com/ru/spell=115151">Заживляющий туман</a>. 
+		Зная эту информацию вы будете понимать насколько сильным будет ваш следующий 
+		<a href="https://www.wowhead.com/ru/spell=116670">вивик</a> под эффектом <a href="https://www.wowhead.com/ru/spell=274586">Ободряющий туман</a>.</p>
 		<br>
-		<p><b>У НАС В <a href="https://discord.gg/cCsfEzc">ДИСКОРДЕ</a> ЛЕЖИТ БОЛЬШОЕ РУКОВОДСТВО ПО ИНТЕРФЕЙСУ ТАНКА.</b>
-		</p>
+		<img class="img-html" src="https://wow.zamimg.com/uploads/screenshots/normal/765656.jpg">
+		<li><a href="https://wago.io/peOrk_Xja">Отслеживание Освежающий нефритовый ветер</a></li>
+		<p>Ааналогичная аука, как на отслеживание количество союзников попадающий под <a href="https://ru.wowhead.com/spell=191837">Купель сущности</a>. 
+		Только эта отслеживает количество союзников под <a href="https://www.wowhead.com/ru/spell=196725">Освежающий нефритовый ветер</a>.</p>
 		<div class="divider">
 			<img class="divider-main"
 					 src="../../img/divider.png"
