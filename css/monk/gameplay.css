@@ -91,66 +91,63 @@
 }
 /*ИНТЕРАКТИВНЫЕ ПРИОРИТЕТЫ ОПЕНЕР*/
 
-/*ТАБЫ*/
-.btn-rotation-content {
+/*ТАБЫ ЛЕГИ*/
+.btn-leg-content {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	width: 100%;
 	/*padding-top: 0vw;*/
 	/*margin-top: 1vw;*/
 	margin-bottom: 1vw;
-	/*background-color: rgba(17, 38, 38, 0.7);*/
+	/*background-color: #112626;*/
+	/*box-shadow: 0 0 0.78vw 0.4vw rgba(0, 0, 0, 0.4);*/
 }
 
-.btn-rotation-1,
-.btn-rotation-2,
-.btn-rotation-3,
-.btn-rotation-4 {
+.btn-leg-1,
+.btn-leg-2,
+.btn-leg-3,
+.btn-leg-4 {
+	background: none;
 	font-family: MontserratBold, sans-serif;
 	color: #9d9063;
+	/*border: none;*/
 	text-transform: uppercase;
+	/*border-bottom: transparent solid 0.1vw;*/
 	height: auto;
-	padding: 0.35vw 22.7% 0.2vw 22.7%;
-	background-color: transparent;
-	/*box-shadow: 0 0 0.78vw 0.4vw rgba(0, 0, 0, 0.4);*/
+	padding: 0.35vw 10.2% 0.2vw 10.2%;
 	border: transparent solid 0.1vw;
 }
 
-.btn-rotation-1:hover,
-.btn-rotation-2:hover,
-.btn-rotation-3:hover,
-.btn-rotation-4:hover {
+.btn-leg-1:hover,
+.btn-leg-2:hover,
+.btn-leg-3:hover,
+.btn-leg-4:hover {
 	border-bottom: #9d9063 solid 0.1vw;
+	/*background-color: rgba(10, 19, 19, 0.6);*/
 }
 
-.tabs-rotation-content {
+.tabs-leg-content {
 	width: 100%;
 }
 
-.tab-rotation-1,
-.tab-rotation-2,
-.tab-rotation-3,
-.tab-rotation-4 {
+.tab-leg-1,
+.tab-leg-2,
+.tab-leg-3,
+.tab-leg-4 {
 	margin-bottom: 1vw;
-	text-align: left;
+	/* text-align: center; */
 }
 
-.tab-rotation-1,
-.tab-rotation-3 {
+.tab-leg-1 {
 	display: block;
 }
 
-.tab-rotation-2,
-.tab-rotation-4 {
+.tab-leg-2,
+.tab-leg-3,
+.tab-leg-4 {
 	display: none;
 }
-
-.select-bg-leg {
-	background-color: #032121;
-	box-shadow: 0 0 0.4vw 0.1vw rgba(0, 0, 0, 0.4);
-	border: #9d9063 solid 0.1vw;
-}
-/*ТАБЫ*/
+/*ТАБЫ ЛЕГИ*/
 
 .ww-bg-rot {
 	background: url("../../img/monk_windwalker-bg.jpg") no-repeat right top;
@@ -165,6 +162,12 @@
 .bm-bg-rot {
 	background: url("../../img/monk_brewmaster-bg.jpg") no-repeat right top;
 	background-size: cover;
+}
+
+.select-bg-leg {
+	background-color: #032121;
+	box-shadow: 0 0 0.4vw 0.1vw rgba(0, 0, 0, 0.4);
+	border: #9d9063 solid 0.1vw;
 }
 
 /* 1920PX И МЕНЬШЕ */
@@ -198,6 +201,21 @@
 	.btn-rotation-3,
 	.btn-rotation-4 {
 		padding: 0.6vw 21.8% 0.35vw 21.8%;
+	}
+
+	.leg-format-note {
+		font-size: 0.9vw;
+	}
+
+	.leg-format-note a {
+		font-size: 0.9vw;
+	}
+
+	.btn-leg-1,
+	.btn-leg-2,
+	.btn-leg-3,
+	.btn-leg-4 {
+		padding: 0.6vw 9.3% 0.35vw 9.3%;
 	}
 }
 
@@ -268,6 +286,19 @@
 	.btn-rotation-3,
 	.btn-rotation-4 {
 		padding: 1.4vw 16.5% 1vw 16.5%;
+	}
+
+	.btn-leg-content {
+		margin-bottom: 5vw;
+	}
+
+	.btn-leg-1,
+	.btn-leg-2,
+	.btn-leg-3,
+	.btn-leg-4 {
+		/*width: 25%;*/
+		/*height: 25%;*/
+		padding: 1.4vw 4.65% 1vw 4.65%;
 	}
 
 	.ww-bg-rot {

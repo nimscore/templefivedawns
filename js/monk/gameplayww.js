@@ -192,4 +192,58 @@ $(document).ready(function() {
 	});
 // ТАБЫ АОЕ
 
+//ТАБЫ ЛЕГИ
+$(".btn-leg-1").click(function(){
+	$(".tab-leg-1").fadeIn (600);
+	$(".tab-leg-2").fadeOut (0);
+	$(".tab-leg-3").fadeOut (0);
+	$(".tab-leg-4").fadeOut (0);
+	// $(".tab-l").attr('color', '#00ff99');
+	// $(".tab-r").attr('color', '#9d9063');
+	$(".btn-leg-1").addClass("select-bg-leg");
+	$(".btn-leg-2").removeClass("select-bg-leg");
+	$(".btn-leg-3").removeClass("select-bg-leg");
+	$(".btn-leg-4").removeClass("select-bg-leg");
+});
+
+$(".btn-leg-2").click(function(){
+	$(".tab-leg-2").fadeIn (600);
+	$(".tab-leg-1").fadeOut (0);
+	$(".tab-leg-3").fadeOut (0);
+	$(".tab-leg-4").fadeOut (0);
+	// $(".tab-l").attr('color', '#00ff99');
+	// $(".tab-r").attr('color', '#9d9063');
+	$(".btn-leg-2").addClass("select-bg-leg");
+	$(".btn-leg-1").removeClass("select-bg-leg");
+	$(".btn-leg-3").removeClass("select-bg-leg");
+	$(".btn-leg-4").removeClass("select-bg-leg");
+});
+
+$(".btn-leg-3").click(function(){
+	$(".tab-leg-3").fadeIn (600);
+	$(".tab-leg-2").fadeOut (0);
+	$(".tab-leg-1").fadeOut (0);
+	$(".tab-leg-4").fadeOut (0);
+	// $(".tab-l").attr('color', '#00ff99');
+	// $(".tab-r").attr('color', '#9d9063');
+	$(".btn-leg-3").addClass("select-bg-leg");
+	$(".btn-leg-2").removeClass("select-bg-leg");
+	$(".btn-leg-1").removeClass("select-bg-leg");
+	$(".btn-leg-4").removeClass("select-bg-leg");
+});
+
+$(".btn-leg-4").click(function(){
+	$(".tab-leg-4").fadeIn (600);
+	$(".tab-leg-2").fadeOut (0);
+	$(".tab-leg-3").fadeOut (0);
+	$(".tab-leg-1").fadeOut (0);
+	// $(".tab-l").attr('color', '#00ff99');
+	// $(".tab-r").attr('color', '#9d9063');
+	$(".btn-leg-4").addClass("select-bg-leg");
+	$(".btn-leg-2").removeClass("select-bg-leg");
+	$(".btn-leg-3").removeClass("select-bg-leg");
+	$(".btn-leg-1").removeClass("select-bg-leg");
+});
+//ТАБЫ ЛЕГИ
+
 });
