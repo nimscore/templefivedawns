@@ -490,6 +490,7 @@ img {
 	visibility: hidden;
 	position: absolute;
 	overflow: hidden;
+	font-size: 0.1vw;
 }
 
 .talents-copy-build {
