@@ -190,3 +190,149 @@ $(document).ready(function () {
 //краски бэкграунда в десктоп хэдере
 
 });
+
+//копирование текста в буфер
+$('#copy1').click(function() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#copy-text1').text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // $(this).text('Готово!');
+});
+
+$('#copy2').click(function() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#copy-text2').text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // $(this).text('Готово!');
+});
+
+$('#copy3').click(function() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#copy-text3').text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // $(this).text('Готово!');
+});
+
+$('#copy4').click(function() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#copy-text4').text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // $(this).text('Готово!');
+});
+
+$('#copy5').click(function() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#copy-text5').text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // $(this).text('Готово!');
+});
+
+$('#copy6').click(function() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#copy-text6').text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // $(this).text('Готово!');
+});
+
+$('#copy7').click(function() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#copy-text7').text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // $(this).text('Готово!');
+});
+
+$('#copy8').click(function() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#copy-text8').text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // $(this).text('Готово!');
+});
+
+$('#copy9').click(function() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#copy-text9').text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // $(this).text('Готово!');
+});
+
+$('#copy10').click(function() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#copy-text10').text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // $(this).text('Готово!');
+});
+
+$('#copy11').click(function() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#copy-text11').text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // $(this).text('Готово!');
+});
+
+$('#copy12').click(function() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#copy-text12').text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // $(this).text('Готово!');
+});
+
+$('#copy13').click(function() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#copy-text13').text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // $(this).text('Готово!');
+});
+
+$('#copy14').click(function() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#copy-text14').text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // $(this).text('Готово!');
+});
+
+$('#copy15').click(function() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#copy-text15').text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // $(this).text('Готово!');
+});
+
+$('#copy16').click(function() {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#copy-text16').text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  // $(this).text('Готово!');
+});
+//копирование текста в буфер

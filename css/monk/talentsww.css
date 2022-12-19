@@ -420,7 +420,7 @@ img {
 }
 
 .green-tal {
-	background-color: #00FF99;
+	background-color: #00ff99;
 	filter: none;
 }
 
@@ -435,7 +435,7 @@ img {
 }
 
 .green-border {
-	border: #00FF99 solid 0.1vw;
+	border: #00ff99 solid 0.1vw;
 	filter: none;
 }
 
@@ -469,6 +469,36 @@ img {
 	transform-origin: right center;
 	width: 50%;
 	z-index: 10;
+}
+
+#copy-text1,
+#copy-text2,
+#copy-text3,
+#copy-text4,
+#copy-text5,
+#copy-text6,
+#copy-text7,
+#copy-text8,
+#copy-text9,
+#copy-text10,
+#copy-text11,
+#copy-text12,
+#copy-text13,
+#copy-text14,
+#copy-text15,
+#copy-text16 {
+	visibility: hidden;
+	position: absolute;
+	overflow: hidden;
+}
+
+.talents-copy-build {
+	background-color: #032121;
+	border: #fff468 solid 0.1vw;
+	width: 100%;
+	padding: 0.6vw;
+	margin: 0vw 0 0.6vw 0;
+	cursor: pointer;
 }
 /* ТAЛАНТЫ */
 
@@ -728,6 +758,11 @@ img {
 		font-size: 8vw;
 	}
 
+	.talents-copy-build {
+		padding: 0.6vw;
+		margin: 0vw 0 1.8vw 0;
+	}
+
 	.row1-tc,
 	.row2-tc,
 	.row3-tc,
@@ -764,17 +799,17 @@ img {
 	}
 
 	.green-border {
-		border: #00FF99 solid 0.1vw;
+		border: #00ff99 solid 0.1vw;
 	}
-	
+
 	.yellow-border {
 		border: #fff468 solid 0.1vw;
 	}
-	
+
 	.red-border {
 		border: #f23f4d solid 0.1vw;
 	}
-	
+
 	.prpl-border {
 		border: #a330c9 solid 0.1vw;
 	}
