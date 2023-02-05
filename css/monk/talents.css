@@ -95,17 +95,17 @@
 }
 
 .ww-bg-tabs {
-	background: url("../../img/monk_windwalker-bg.jpg") no-repeat right top;
+	background: url('../../img/monk_windwalker-bg.jpg') no-repeat right top;
 	background-size: cover;
 }
 
 .mw-bg-tabs {
-	background: url("../../img/monk_mistweaver-bg.jpg") no-repeat right top;
+	background: url('../../img/monk_mistweaver-bg.jpg') no-repeat right top;
 	background-size: cover;
 }
 
 .bm-bg-tabs {
-	background: url("../../img/monk_brewmaster-bg.jpg") no-repeat right top;
+	background: url('../../img/monk_brewmaster-bg.jpg') no-repeat right top;
 	background-size: cover;
 }
 
@@ -347,6 +347,40 @@
 	width: 50%;
 	z-index: 10;
 }
+#copy-text1,
+#copy-text2,
+#copy-text3,
+#copy-text4,
+#copy-text5,
+#copy-text6,
+#copy-text7,
+#copy-text8,
+#copy-text9,
+#copy-text10,
+#copy-text11,
+#copy-text12,
+#copy-text13,
+#copy-text14,
+#copy-text15,
+#copy-text16 {
+	visibility: hidden;
+	position: absolute;
+	overflow: hidden;
+	font-size: 0.1vw;
+}
+
+.talents-copy-build {
+	background-color: #032121;
+	border: #9d9063 solid 0.01vw;
+	width: 100%;
+	padding: 0.6vw;
+	margin: 0vw 0 0.6vw 0;
+	cursor: pointer;
+}
+
+.talents-copy-build:hover {
+	background-color: #031b1b;
+}
 /* ТAЛАНТЫ */
 
 /* 1920PX И МЕНЬШЕ */
@@ -541,32 +575,32 @@
 	}
 
 	.ww-bg-monk {
-		background: url("../../img/monk_windwalker-bg.jpg") no-repeat center top;
+		background: url('../../img/monk_windwalker-bg.jpg') no-repeat center top;
 		background-size: cover;
 	}
 
 	.ww-bg-spec {
-		background: url("../../img/monk_windwalker-bg.jpg") no-repeat right top;
+		background: url('../../img/monk_windwalker-bg.jpg') no-repeat right top;
 		background-size: cover;
 	}
 
 	.mw-bg-monk {
-		background: url("../../img/monk_mistweaver-bg.jpg") no-repeat center top;
+		background: url('../../img/monk_mistweaver-bg.jpg') no-repeat center top;
 		background-size: cover;
 	}
 
 	.mw-bg-spec {
-		background: url("../../img/monk_mistweaver-bg.jpg") no-repeat right top;
+		background: url('../../img/monk_mistweaver-bg.jpg') no-repeat right top;
 		background-size: cover;
 	}
 
 	.bm-bg-monk {
-		background: url("../../img/monk_brewmaster-bg.jpg") no-repeat center top;
+		background: url('../../img/monk_brewmaster-bg.jpg') no-repeat center top;
 		background-size: cover;
 	}
 
 	.bm-bg-spec {
-		background: url("../../img/monk_brewmaster-bg.jpg") no-repeat right top;
+		background: url('../../img/monk_brewmaster-bg.jpg') no-repeat right top;
 		background-size: cover;
 	}
 
@@ -588,6 +622,11 @@
 	#talents-swap-spec,
 	#talents-swap-monk {
 		font-size: 13vw;
+	}
+
+	.talents-copy-build {
+		padding: 0.6vw;
+		margin: 0vw 0 1.8vw 0;
 	}
 
 	.row1-tc,
