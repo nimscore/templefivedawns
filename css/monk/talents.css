@@ -680,6 +680,12 @@
 	.active-tal {
 	}
 
+	.rb-frame {
+		border: none;
+		width: 396px;
+		height: 650px;
+	}
+
 	.green-tal {
 		background-color: #00ff99;
 	}
