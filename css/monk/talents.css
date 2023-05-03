@@ -686,6 +686,10 @@
 		height: 650px;
 	}
 
+	.rb-talents-header {
+		display: none;
+	}
+
 	.green-tal {
 		background-color: #00ff99;
 	}
