@@ -99,18 +99,54 @@ img {
 }
 
 .ww-bg-tabs {
-	background: url("../../img/monk_windwalker-bg.jpg") no-repeat right top;
+	background: url('../../img/monk_windwalker-bg.jpg') no-repeat right top;
 	background-size: cover;
 }
 
 .mw-bg-tabs {
-	background: url("../../img/monk_mistweaver-bg.jpg") no-repeat right top;
+	background: url('../../img/monk_mistweaver-bg.jpg') no-repeat right top;
 	background-size: cover;
 }
 
 .bm-bg-tabs {
-	background: url("../../img/monk_brewmaster-bg.jpg") no-repeat right top;
+	background: url('../../img/monk_brewmaster-bg.jpg') no-repeat right top;
 	background-size: cover;
+}
+
+.rb-ww-bg-tabs {
+	background: url('../../img/monk_windwalker-bg.jpg') no-repeat right top;
+	background-size: cover;
+	border: #9d9063 solid 0.1vw;
+}
+
+.rb-frame-flex {
+	display: flex;
+	justify-content: center;
+}
+
+.rb-frame {
+	border: none;
+	width: 900px;
+	height: 580px;
+}
+
+.rb-talents-header {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+
+.rb-talents-header h2 {
+	font-family: MontserratBlack, sans-serif;
+	padding: 0;
+	margin-top: 1vw;
+	background-color: rgba(3, 19, 19, 0.6);
+	border-radius: 4px 16px 4px 16px;
+}
+
+.header-monk,
+.header-ww {
+	width: 45%;
 }
 
 .ww-bg-monk,
@@ -709,32 +745,32 @@ img {
 	}
 
 	.ww-bg-monk {
-		background: url("../../img/monk_windwalker-bg.jpg") no-repeat center top;
+		background: url('../../img/monk_windwalker-bg.jpg') no-repeat center top;
 		background-size: cover;
 	}
 
 	.ww-bg-spec {
-		background: url("../../img/monk_windwalker-bg.jpg") no-repeat right top;
+		background: url('../../img/monk_windwalker-bg.jpg') no-repeat right top;
 		background-size: cover;
 	}
 
 	.mw-bg-monk {
-		background: url("../../img/monk_mistweaver-bg.jpg") no-repeat center top;
+		background: url('../../img/monk_mistweaver-bg.jpg') no-repeat center top;
 		background-size: cover;
 	}
 
 	.mw-bg-spec {
-		background: url("../../img/monk_mistweaver-bg.jpg") no-repeat right top;
+		background: url('../../img/monk_mistweaver-bg.jpg') no-repeat right top;
 		background-size: cover;
 	}
 
 	.bm-bg-monk {
-		background: url("../../img/monk_brewmaster-bg.jpg") no-repeat center top;
+		background: url('../../img/monk_brewmaster-bg.jpg') no-repeat center top;
 		background-size: cover;
 	}
 
 	.bm-bg-spec {
-		background: url("../../img/monk_brewmaster-bg.jpg") no-repeat right top;
+		background: url('../../img/monk_brewmaster-bg.jpg') no-repeat right top;
 		background-size: cover;
 	}
 
@@ -785,6 +821,16 @@ img {
 	}
 
 	.active-tal {
+	}
+
+	.rb-frame {
+		border: none;
+		width: 350px;
+		height: 600px;
+	}
+
+	.rb-talents-header {
+		display: none;
 	}
 
 	.green-tal {

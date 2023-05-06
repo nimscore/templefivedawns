@@ -118,6 +118,27 @@
 	border: transparent solid 0.1vw;
 }
 
+.btn-rotation-1,
+.btn-rotation-2,
+.btn-rotation-3,
+.btn-rotation-4 {
+	font-family: MontserratBold, sans-serif;
+	color: #9d9063;
+	text-transform: uppercase;
+	height: auto;
+	padding: 0.35vw 22.2% 0.2vw 22.2%;
+	background-color: transparent;
+	border: transparent solid 0.1vw;
+	margin-bottom: 1vw;
+}
+
+.btn-rotation-1:hover,
+.btn-rotation-2:hover,
+.btn-rotation-3:hover,
+.btn-rotation-4:hover {
+	border-bottom: #9d9063 solid 0.1vw;
+}
+
 .btn-leg-1:hover,
 .btn-leg-2:hover,
 .btn-leg-3:hover,
@@ -150,17 +171,17 @@
 /*ТАБЫ ЛЕГИ*/
 
 .ww-bg-rot {
-	background: url("../../img/monk_windwalker-bg.jpg") no-repeat right top;
+	background: url('../../img/monk_windwalker-bg.jpg') no-repeat right top;
 	background-size: cover;
 }
 
 .mw-bg-rot {
-	background: url("../../img/monk_mistweaver-bg.jpg") no-repeat right top;
+	background: url('../../img/monk_mistweaver-bg.jpg') no-repeat right top;
 	background-size: cover;
 }
 
 .bm-bg-rot {
-	background: url("../../img/monk_brewmaster-bg.jpg") no-repeat right top;
+	background: url('../../img/monk_brewmaster-bg.jpg') no-repeat right top;
 	background-size: cover;
 }
 
@@ -176,7 +197,7 @@
 	.btn-rotation-2,
 	.btn-rotation-3,
 	.btn-rotation-4 {
-		padding: 0.6vw 22% 0.35vw 22%;
+		padding: 0.6vw 21% 0.35vw 21%;
 	}
 }
 
@@ -200,7 +221,7 @@
 	.btn-rotation-2,
 	.btn-rotation-3,
 	.btn-rotation-4 {
-		padding: 0.6vw 21.8% 0.35vw 21.8%;
+		padding: 0.6vw 21% 0.35vw 21%;
 	}
 
 	.leg-format-note {
@@ -285,7 +306,7 @@
 	.btn-rotation-2,
 	.btn-rotation-3,
 	.btn-rotation-4 {
-		padding: 1.4vw 16.5% 1vw 16.5%;
+		padding: 1.4vw 15.8% 1vw 15.8%;
 	}
 
 	.btn-leg-content {
@@ -302,17 +323,17 @@
 	}
 
 	.ww-bg-rot {
-		background: url("../../img/monk_windwalker-bg.jpg") no-repeat right top;
+		background: url('../../img/monk_windwalker-bg.jpg') no-repeat right top;
 		background-size: cover;
 	}
 
 	.mw-bg-rot {
-		background: url("../../img/monk_mistweaver-bg.jpg") no-repeat right top;
+		background: url('../../img/monk_mistweaver-bg.jpg') no-repeat right top;
 		background-size: cover;
 	}
 
 	.bm-bg-rot {
-		background: url("../../img/monk_brewmaster-bg.jpg") no-repeat right top;
+		background: url('../../img/monk_brewmaster-bg.jpg') no-repeat right top;
 		background-size: cover;
 	}
 }
