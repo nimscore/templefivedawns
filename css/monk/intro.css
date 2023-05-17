@@ -8,20 +8,21 @@
 /* аккордеон начало */
 .accordion {
 	background-color: rgba(17, 26, 26, 0);
-	font-family: MontserratBold, sans-serif;
-	font-size: 1vw;
+	font-size: 1.24vw;
 	text-decoration: none;
-	margin: 0.4vw 0 0 0;
-	color: #9d9063;
+	margin: 0;
+	color: #00ff99;
 	cursor: pointer;
 	width: 100%;
 	text-align: left;
 	border: none;
 	outline: none;
+	display: flex;
 }
 
-.accordion:hover {
+.accord-text {
 	color: #00ff99;
+	font-family: MontserratBold, sans-serif;
 }
 
 .panel {
@@ -32,7 +33,6 @@
 	padding: 0;
 	text-decoration: none;
 }
-
 /* аккордеон конец */
 
 /* 1440PX И МЕНЬШЕ */
@@ -46,7 +46,7 @@
 	}
 
 	.accordion {
-		font-size: 4vw;
+		font-size: 5vw;
 	}
 }
 
